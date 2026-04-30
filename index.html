@@ -1,52 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OYA Hermitage Clinic | Edmonton Primary Care</title>
-<meta name="description" content="OYA Hermitage Clinic in Edmonton. Dr. Bazza walk-in care 2 PM to 5 PM. Dr. Adala accepting new patients 9 AM to 2 PM.">
-<style>
-:root{--navy:#061b32;--navy2:#0a2d4f;--teal:#0b7f78;--gold:#b88a3b;--ivory:#fbfaf7;--soft:#f4f1ea;--text:#13283b;--muted:#6b7280;--line:#e8dfd0}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--ivory);color:var(--text);line-height:1.65}
-a{text-decoration:none;color:inherit}.container{width:min(1180px,92%);margin:auto}
-.top-strip{background:var(--navy);color:white;font-size:14px;padding:8px 0}.top-strip .container{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-.header{background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10;backdrop-filter:blur(12px)}
-.header-inner{display:flex;align-items:center;justify-content:space-between;gap:28px;padding:16px 0}.logo{max-width:430px;width:100%;height:auto;display:block}
-.nav{display:flex;gap:26px;font-size:14px;font-weight:700;letter-spacing:.08em;color:var(--navy)}.nav a:hover{color:var(--teal)}
-.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 80% 20%,rgba(11,127,120,.12),transparent 30%),linear-gradient(135deg,#fff 0%,#fbfaf7 45%,#eef5f4 100%);border-bottom:1px solid var(--line)}
-.hero-inner{min-height:560px;display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:50px;padding:72px 0}
-.eyebrow{color:var(--gold);font-weight:800;letter-spacing:.16em;text-transform:uppercase;font-size:13px}
-.hero h1{font-family:Georgia,"Times New Roman",serif;color:var(--navy);font-size:clamp(42px,6vw,76px);line-height:1.02;margin:16px 0 18px;letter-spacing:-.04em}
-.hero p{font-size:21px;color:#334155;max-width:680px;margin:0}.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:14px 24px;border-radius:999px;font-weight:800;border:1px solid transparent}
-.btn-primary{background:var(--navy);color:white}.btn-gold{background:var(--gold);color:white}.btn-outline{background:white;color:var(--navy);border-color:var(--line)}
-.hero-panel{background:rgba(255,255,255,.84);border:1px solid var(--line);border-radius:28px;padding:26px;box-shadow:0 28px 80px rgba(6,27,50,.12)}
-.panel-card{background:linear-gradient(145deg,var(--navy),var(--navy2));color:white;border-radius:22px;padding:30px;margin-bottom:18px}.panel-card h2{font-family:Georgia,"Times New Roman",serif;margin:0 0 8px;font-size:30px}
-.status-grid{display:grid;gap:14px}.status{background:white;border:1px solid var(--line);border-radius:18px;padding:18px}.status strong{color:var(--navy)}
-.quick-actions{margin-top:-36px;position:relative;z-index:2}.actions-grid{display:grid;grid-template-columns:repeat(6,1fr);background:white;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 18px 55px rgba(6,27,50,.08)}
-.action{padding:22px 14px;text-align:center;font-weight:800;color:var(--navy);border-right:1px solid var(--line)}.action:last-child{border-right:0}.action:hover{background:var(--soft)}.action.dark{background:var(--navy);color:white}.action.teal{background:var(--teal);color:white}.action.gold{background:var(--gold);color:white}
-.section{padding:78px 0}.section-title{text-align:center;max-width:760px;margin:0 auto 42px}.section-title h2{font-family:Georgia,"Times New Roman",serif;color:var(--navy);font-size:42px;line-height:1.12;margin:0 0 12px}.section-title p{color:var(--muted);font-size:18px;margin:0}
-.physician-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}.physician-card{background:white;border:1px solid var(--line);border-radius:26px;padding:32px;display:grid;grid-template-columns:220px 1fr;align-items:center;gap:24px;box-shadow:0 16px 50px rgba(6,27,50,.06)}
-.physician-card img{width:100%;height:auto}.physician-card h3{font-family:Georgia,"Times New Roman",serif;color:var(--navy);font-size:30px;margin:0 0 8px}
-.badge{display:inline-block;padding:6px 12px;border-radius:999px;font-weight:800;font-size:13px;margin-top:8px}.badge.gold{background:#fff6e8;color:#8a5d15}.badge.teal{background:#e8f7f5;color:#08766f}
-.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.feature-card{background:white;border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:0 14px 42px rgba(6,27,50,.05)}.feature-card h3{color:var(--navy);margin-top:0;font-size:22px}
-.location-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:26px;align-items:stretch}.location-card{background:linear-gradient(145deg,var(--navy),var(--navy2));color:white;border-radius:26px;padding:34px}.location-card h2{font-family:Georgia,"Times New Roman",serif;font-size:36px;margin:0 0 14px}
-.map-frame{border-radius:26px;overflow:hidden;border:1px solid var(--line);min-height:360px;background:white}.map-frame iframe{width:100%;height:100%;min-height:360px;border:0}
-.footer{background:var(--navy);color:white;padding:42px 0;border-top:4px solid var(--gold)}.footer-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:28px;align-items:start}.footer img{max-width:300px;background:white;border-radius:16px;padding:10px}.footer a{color:white}
-@media(max-width:1000px){.nav{display:none}.hero-inner,.location-wrap,.footer-grid{grid-template-columns:1fr}.actions-grid{grid-template-columns:1fr 1fr}.action{border-bottom:1px solid var(--line)}.physician-grid{grid-template-columns:1fr}.physician-card{grid-template-columns:1fr;text-align:center}.physician-card img{max-width:240px;margin:auto}.feature-grid{grid-template-columns:1fr}.hero-inner{text-align:center}.hero p{margin:auto}.hero-actions{justify-content:center}.top-strip .container,.header-inner{justify-content:center;text-align:center}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OYA Hermitage Clinic | Edmonton Primary Care</title>
+  <meta name="description" content="OYA Hermitage Clinic in Edmonton. Primary care, walk-in access, online booking, physician referral forms, and patient intake forms.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="top-strip"><div class="container"><div>OYA Hermitage Clinic · Primary Care Clinic</div><div><a href="tel:8256005902">825-600-5902</a> · Fax 825-600-5926</div></div></div>
-<header class="header"><div class="container header-inner"><a href="#home"><img src="oya-logo.png" alt="OYA Hermitage Clinic Logo" class="logo"></a><nav class="nav"><a href="#physicians">PHYSICIANS</a><a href="#services">SERVICES</a><a href="#forms">FORMS</a><a href="#location">LOCATION</a></nav></div></header>
-<section class="hero" id="home"><div class="container hero-inner"><div><div class="eyebrow">Edmonton Primary Care</div><h1>Quality Care.<br>Focused on You.</h1><p>Modern, patient-centred primary care with clear access, structured visits, and professional continuity.</p><div class="hero-actions"><a class="btn btn-primary" href="https://cloud.healthquest.ca:45277/onlinebooking" target="_blank" rel="noopener">Book Online</a><a class="btn btn-outline" href="tel:8256005902">Call Clinic</a><a class="btn btn-gold" href="https://www.google.com/maps/search/?api=1&query=12719%20Victoria%20Trail%20NW%20Edmonton%20AB%20T5A%204J4" target="_blank" rel="noopener">Get Directions</a></div></div>
-<aside class="hero-panel"><div class="panel-card"><h2>Book Your Appointment</h2><p>Use our secure online booking portal for clinic availability.</p><a class="btn btn-gold" href="https://cloud.healthquest.ca:45277/onlinebooking" target="_blank" rel="noopener">BOOK NOW</a></div><div class="status-grid"><div class="status"><strong>Dr. Bazza</strong><br>Walk-in Clinic · 2:00 PM – 5:00 PM<br><span style="color:#956817;font-weight:800;">Not accepting new patients</span></div><div class="status"><strong>Dr. Adala</strong><br>Family Medicine · 9:00 AM – 2:00 PM<br><span style="color:#0b7f78;font-weight:800;">Accepting new patients</span></div></div></aside></div></section>
-<main>
-<section class="container quick-actions" id="forms"><div class="actions-grid"><a class="action dark" href="tel:8256005902">Call Clinic</a><a class="action gold" href="https://www.google.com/maps/search/?api=1&query=12719%20Victoria%20Trail%20NW%20Edmonton%20AB%20T5A%204J4" target="_blank" rel="noopener">Map & Directions</a><a class="action teal" href="https://cloud.healthquest.ca:45277/onlinebooking" target="_blank" rel="noopener">Online Booking</a><a class="action" href="referral.html">Physician Referral</a><a class="action" href="intake.html">New Patient Intake</a><a class="action" href="ffccc-intake.html">FFCCC Intake</a></div></section>
-<section class="section container" id="physicians"><div class="section-title"><h2>Clinic Physicians</h2><p>Clear access pathways for walk-in care and family medicine attachment.</p></div><div class="physician-grid"><article class="physician-card"><img src="dr-bazza-logo.png" alt="Dr Bazza Logo"><div><h3>Dr. Bazza</h3><p><strong>Family Physician</strong></p><p>Walk-in clinic care from <strong>2:00 PM – 5:00 PM</strong>.</p><span class="badge gold">Not accepting new patients</span></div></article><article class="physician-card"><img src="dr-adala-logo.png" alt="Dr Adala Logo"><div><h3>Dr. Adala</h3><p><strong>Family Physician</strong></p><p>Family medicine care from <strong>9:00 AM – 2:00 PM</strong>.</p><span class="badge teal">Accepting new patients</span></div></article></div></section>
-<section class="section" id="services" style="background:#fff;"><div class="container"><div class="section-title"><h2>Care Designed Around Function</h2><p>Practical, organized, and patient-centred care for everyday health needs.</p></div><div class="feature-grid"><div class="feature-card"><h3>Primary Care</h3><p>Preventive care, chronic disease review, medication renewals, and ongoing health planning.</p></div><div class="feature-card"><h3>Walk-In Access</h3><p>Walk-in appointments are available with Dr. Bazza during posted clinic hours.</p></div><div class="feature-card"><h3>Structured Forms</h3><p>Referral and intake forms help organize visits and support efficient, focused care.</p></div></div></div></section>
-<section class="section container" id="location"><div class="location-wrap"><div class="location-card"><h2>Location</h2><p><strong>OYA Hermitage Clinic</strong></p><p>12719 Victoria Trail NW<br>Edmonton, AB T5A 4J4</p><p>Phone: <a href="tel:8256005902">825-600-5902</a><br>Fax: 825-600-5926</p><a class="btn btn-gold" href="https://www.google.com/maps/search/?api=1&query=12719%20Victoria%20Trail%20NW%20Edmonton%20AB%20T5A%204J4" target="_blank" rel="noopener">Open in Google Maps</a></div><div class="map-frame"><iframe src="https://www.google.com/maps?q=12719%20Victoria%20Trail%20NW%20Edmonton%20AB%20T5A%204J4&output=embed"></iframe></div></div></section>
-</main>
-<footer class="footer"><div class="container footer-grid"><div><img src="oya-logo.png" alt="OYA Hermitage Clinic Logo"></div><div><strong>Contact</strong><br><a href="tel:8256005902">825-600-5902</a><br>Fax: 825-600-5926</div><div><strong>Address</strong><br>12719 Victoria Trail NW<br>Edmonton, AB T5A 4J4<br>oyaclinic.ca</div></div></footer>
-</body></html>
+  <div class="topbar">
+    <div class="container">
+      <div><strong>OYA Hermitage Clinic</strong> · 12719 Victoria Trail NW, Edmonton AB T5A 4J4</div>
+      <div><strong>Hours:</strong> 9:00 AM – 7:00 PM · <a href="tel:8256005902">825-600-5902</a> · Fax 825-600-5926</div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="#top"><img src="oya-logo.png" alt="OYA Hermitage Clinic logo" class="brand"></a>
+      <nav class="nav">
+        <a href="#physicians">PHYSICIANS</a>
+        <a href="#services">SERVICES</a>
+        <a href="#forms">FORMS</a>
+        <a href="#location">LOCATION</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="container hero-inner">
+      <div>
+        <div class="eyebrow">Edmonton Primary Care</div>
+        <h1>Quality Care.<br>Focused on You.</h1>
+        <p>Modern, patient-centred care with clear access, professional continuity, and practical next steps for primary care, walk-in concerns, and function-focused complex care.</p>
+        <div class="button-row">
+          <a class="btn btn-primary" href="tel:8256005902" aria-label="Call OYA Hermitage Clinic">Call Clinic</a>
+          <a class="btn btn-gold" href="https://cloud.healthquest.ca:45277/onlinebooking" target="_blank" rel="noopener" aria-label="Open online booking">Online Booking</a>
+          <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=12719%20Victoria%20Trail%20NW%20Edmonton%20AB%20T5A%204J4" target="_blank" rel="noopener" aria-label="Open directions map">Directions Map</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <div class="panel">
+          <h2>Book Your Appointment</h2>
+          <p>Use the secure online booking portal or call the clinic directly for assistance.</p>
+          <div class="button-row">
+            <a class="btn btn-gold" href="https://cloud.healthquest.ca:45277/onlinebooking" target="_blank" rel="noopener">Book Now</a>
+          </div>
+        </div>
+        <div class="hero-note"><strong>Clinic Hours:</strong> 9:00 AM – 7:00 PM</div>
+        <div class="hero-note"><strong>Dr. Bazza:</strong> Walk-in and function-focused care. Not accepting new family practice patients.</div>
+        <div class="hero-note"><strong>Dr. Adala:</strong> Family medicine care. Accepting new patients.</div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="container quick-actions" id="forms">
+    <div class="quick-grid">
+      <a class="primary" href="tel:8256005902" aria-label="Call clinic directly">Direct Phone Call</a>
+      <a class="gold" href="https://cloud.healthquest.ca:45277/onlinebooking" target="_blank" rel="noopener" aria-label="Book appointment online">Online Booking</a>
+      <a class="teal" href="https://www.google.com/maps/search/?api=1&query=12719%20Victoria%20Trail%20NW%20Edmonton%20AB%20T5A%204J4" target="_blank" rel="noopener" aria-label="Open directions in Google Maps">Directions Map</a>
+      <a href="referral.html">Physician Referral</a>
+      <a href="intake.html">New Patient Intake</a>
+      <a href="ffccc-intake.html">FFCCC Intake</a>
+    </div>
+  </section>
+
+  <section class="section container" id="physicians">
+    <div class="section-title">
+      <h2>Clinic Physicians</h2>
+      <p>Clear access pathways for walk-in care, family medicine attachment, and function-focused complex care.</p>
+    </div>
+
+    <div class="physician-grid equal-physician-grid">
+
+      <article class="card physician-card-equal">
+        <div class="physician-logo-frame">
+          <img src="dr-bazza-logo.png" alt="Dr Bazza logo" class="physician-logo-img">
+        </div>
+
+        <div class="physician-content">
+          <h3>Dr. Bazza</h3>
+          <div class="subhead">Family Physician</div>
+          <p>
+            Dr. Bazza provides confident, structured, patient-centred care with a focus on
+            function, safety, stabilization, and practical next steps.
+          </p>
+          <span class="badge badge-gold">Walk-in and function-focused care</span>
+        </div>
+      </article>
+
+      <article class="card physician-card-equal">
+        <div class="physician-logo-frame">
+          <img src="dr-adala-logo.png" alt="Dr Adala logo" class="physician-logo-img">
+        </div>
+
+        <div class="physician-content">
+          <h3>Dr. Adala</h3>
+          <div class="subhead">Family Physician</div>
+          <p>
+            Dr. Adala provides family medicine care and is accepting new patients.
+          </p>
+          <span class="badge badge-teal">Accepting new patients</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section alt" id="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Care Designed Around Function</h2>
+        <p>Practical, organized, and patient-centred care for everyday health needs.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card">
+          <h3>Primary Care</h3>
+          <p>Preventive care, chronic disease review, medication renewal, family medicine follow-up, and ongoing health planning.</p>
+        </article>
+        <article class="service-card">
+          <h3>Walk-In Access</h3>
+          <p>Timely episodic assessment for acute concerns, with clear plans, prescriptions when appropriate, and follow-up guidance.</p>
+        </article>
+        <article class="service-card">
+          <h3>Function-Focused Complex Care</h3>
+          <p>Support for mental health, addiction, chronic pain, and medication complexity with a structured, safety-oriented approach.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container" id="location">
+    <div class="location-grid">
+      <div class="location-panel">
+        <h2>Location</h2>
+        <p><strong>OYA Hermitage Clinic</strong></p>
+        <p>12719 Victoria Trail NW<br>Edmonton, AB T5A 4J4</p>
+        <p>Phone: <a href="tel:8256005902">825-600-5902</a><br>Fax: 825-600-5926</p>
+        <div class="button-row">
+          <a class="btn btn-gold" href="https://www.google.com/maps/search/?api=1&query=12719%20Victoria%20Trail%20NW%20Edmonton%20AB%20T5A%204J4" target="_blank" rel="noopener">Open in Google Maps</a>
+        </div>
+      </div>
+      <div class="map-frame">
+        <iframe src="https://www.google.com/maps?q=12719%20Victoria%20Trail%20NW%20Edmonton%20AB%20T5A%204J4&output=embed" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="oya-logo.png" alt="OYA Hermitage Clinic logo" class="footer-logo">
+      </div>
+      <div>
+        <strong>Contact</strong><br>
+        <a href="tel:8256005902">825-600-5902</a><br>
+        Fax: 825-600-5926<br>
+        Hours: 9:00 AM – 7:00 PM
+      </div>
+      <div>
+        <strong>Quick Links</strong><br>
+        <div class="helper-links">
+          <a href="referral.html">Referral</a>
+          <a href="intake.html">Intake</a>
+          <a href="ffccc-intake.html">FFCCC</a>
+        </div>
+        <div style="margin-top:10px">oyaclinic.ca</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

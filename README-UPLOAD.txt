@@ -1,26 +1,35 @@
-UPLOAD ALL THESE FILES TO GITHUB ROOT:
-index.html
-referral.html
-intake.html
-ffccc-intake.html
-oya-logo.png
-dr-bazza-logo.png
-dr-adala-logo.png
+OYA Hermitage Clinic - FINAL TESTED GitHub Package
 
-GITHUB PAGES:
-Settings > Pages
-Source: Deploy from branch
-Branch: main
-Folder: /root
+Upload every file in this folder to the ROOT of the GitHub repo.
 
-CUSTOM DOMAIN:
-oyaclinic.ca
+Files:
+- index.html
+- styles.css
+- referral.html
+- intake.html
+- ffccc-intake.html
+- oya-logo.png
+- dr-bazza-logo.png
+- dr-adala-logo.png
+- dr-adala-icon-square.png
+- dr-bazza-photo.jpg
+- dr-bazza-card.jpg
+- dr-bazza-google-square.jpg
+- CNAME
 
-GODADDY DNS:
-A     @     185.199.108.153
-A     @     185.199.109.153
-A     @     185.199.110.153
-A     @     185.199.111.153
-CNAME www   YOUR-GITHUB-USERNAME.github.io
+Testing:
+1. On your computer: unzip package, then double-click index.html.
+2. Test the three main buttons:
+   - Direct Phone Call
+   - Online Booking
+   - Directions Map
+3. Test all form links:
+   - referral.html
+   - intake.html
+   - ffccc-intake.html
 
-Then enable Enforce HTTPS in GitHub Pages.
+GitHub:
+1. Upload files to repo root, not inside a folder.
+2. GitHub Pages: main / root.
+3. Custom domain: oyaclinic.ca.
+4. Enforce HTTPS: on.

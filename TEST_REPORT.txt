@@ -1,0 +1,11 @@
+OYA equal-logo package test report
+
+Result: PASS
+Changes:
+- Replaced Dr. Bazza and Dr. Adala physician logos with equal 1200x1200 canvas files.
+- Updated homepage physician cards to identical layout.
+- Added CSS so both logo display boxes are exactly 260x260 desktop and 230x230 mobile.
+- Removed nested/unequal physician-card structure.
+
+Internal reference check:
+All internal file references exist.
