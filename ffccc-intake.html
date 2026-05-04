@@ -1,0 +1,132 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dr Bazza FSP - Referral Form</title>
+  <style>
+    :root{--navy:#17212B;--gold:#B79B5B;--cream:#F4F1EA;--line:#D8D2C4;--text:#1F2933;--muted:#5B6470;}
+    *{box-sizing:border-box} body{margin:0;background:#f7f5f0;color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.4}
+    .page{max-width:960px;margin:28px auto;background:white;box-shadow:0 16px 45px rgba(23,33,43,.12)}
+    header{background:var(--navy);color:white;padding:28px 36px 24px;border-bottom:5px solid var(--gold)}
+    h1{margin:0;font-size:25px;letter-spacing:.2px} .tag{margin-top:8px;color:#eee;font-size:14px}.sub{margin-top:14px;font-size:12px;text-transform:uppercase;letter-spacing:.9px;color:#d9d2c2}
+    form{padding:30px 36px 42px}.intro{border:1px solid var(--line);padding:16px 18px;background:#fffdf8;margin-bottom:22px}.intro strong{display:block;margin-bottom:5px}
+    fieldset{border:0;margin:0 0 24px;padding:0}.section-title{background:var(--cream);color:var(--navy);font-weight:700;padding:9px 12px;border-radius:7px;margin-bottom:14px;border-left:4px solid var(--gold)}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 18px}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px 18px}.full{grid-column:1/-1}
+    label{display:block;font-size:13px;color:var(--muted);margin-bottom:5px} input[type="text"],input[type="date"],textarea,select{width:100%;border:1px solid var(--line);border-radius:6px;padding:10px 11px;font-size:15px;color:var(--text);background:white} textarea{min-height:96px;resize:vertical}.checkbox{display:flex;align-items:flex-start;gap:8px;font-size:14px;color:var(--text);padding:3px 0}.checkbox input{margin-top:3px}.note{font-size:13px;color:var(--muted);background:#faf8f2;border-left:3px solid var(--gold);padding:12px 14px;margin-top:10px}.actions{display:flex;gap:10px;margin-top:28px}.button{border:0;border-radius:6px;background:var(--navy);color:white;padding:12px 18px;font-weight:700;cursor:pointer}.button.secondary{background:#ece6d8;color:var(--navy)}
+    footer{padding:18px 36px 30px;color:var(--muted);font-size:12px;border-top:1px solid var(--line)}
+    @media print{body{background:white}.page{box-shadow:none;margin:0;max-width:none}.actions{display:none} header{print-color-adjust:exact;-webkit-print-color-adjust:exact} input,textarea{border-color:#888}.section-title{print-color-adjust:exact;-webkit-print-color-adjust:exact}.page-break{break-before:page}}
+    @media (max-width:720px){.grid,.grid-3{grid-template-columns:1fr}header,form,footer{padding-left:20px;padding-right:20px}.page{margin:0}}
+  </style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <h1>Dr Bazza Function-Focused Stabilization Program</h1>
+    <div class="tag">Safety. Function. Stabilization. Shared Care.</div>
+    <div class="sub">Physician Referral Form | Referral-Based | Time-Limited Stabilization | Shared Care</div>
+  </header>
+  <form>
+    <div class="intro"><strong>Referral destination</strong>Dr Bazza, MD, CCFP - Family Physician (Focused Practice)<br>Consultation and stabilization in complex care: mental health, addiction, chronic pain, and medication complexity.</div>
+
+    <fieldset><div class="section-title">Referral Transmission</div><div class="grid">
+      <div><label>Clinic / Program fax</label><input type="text" name="program_fax"></div>
+      <div><label>Date sent</label><input type="date" name="date_sent"></div>
+      <div><label>Referring clinician / clinic</label><input type="text" name="ref_clinician"></div>
+      <div><label>Referral contact phone / fax</label><input type="text" name="ref_contact"></div>
+    </div></fieldset>
+
+    <fieldset><div class="section-title">1. Patient Information</div><div class="grid">
+      <div><label>Patient name</label><input type="text" name="patient_name"></div>
+      <div><label>PHN / ULI</label><input type="text" name="phn"></div>
+      <div><label>DOB</label><input type="date" name="dob"></div>
+      <div><label>Patient phone</label><input type="text" name="patient_phone"></div>
+      <div><label>Current pharmacy</label><input type="text" name="pharmacy"></div>
+      <div><label>Current primary prescriber</label><input type="text" name="primary_prescriber"></div>
+    </div></fieldset>
+
+    <fieldset><div class="section-title">2. Reason for Referral</div><div class="grid-3">
+      <label class="checkbox"><input type="checkbox" name="r_opioid"> Opioid complexity</label>
+      <label class="checkbox"><input type="checkbox" name="r_benzo"> Benzodiazepine / Z-drug</label>
+      <label class="checkbox"><input type="checkbox" name="r_oat"> OAT / addiction</label>
+      <label class="checkbox"><input type="checkbox" name="r_pain"> Chronic pain / fibromyalgia</label>
+      <label class="checkbox"><input type="checkbox" name="r_mh"> Mental health complexity</label>
+      <label class="checkbox"><input type="checkbox" name="r_func"> Functional / somatic disorder</label>
+      <label class="checkbox"><input type="checkbox" name="r_poly"> Polypharmacy / co-sedation</label>
+      <label class="checkbox"><input type="checkbox" name="r_disability"> Disability function support</label>
+      <label class="checkbox"><input type="checkbox" name="r_other"> Other</label>
+    </div><div class="full"><label>Specific referral question / requested assistance</label><textarea name="ref_question"></textarea></div></fieldset>
+
+    <fieldset><div class="section-title">3. Requested Service Type</div><div class="grid-3">
+      <label class="checkbox"><input type="checkbox" name="svc_advice"> Advice only</label>
+      <label class="checkbox"><input type="checkbox" name="svc_stab"> Temporary stabilization</label>
+      <label class="checkbox"><input type="checkbox" name="svc_taper"> Assistance with taper</label>
+      <label class="checkbox"><input type="checkbox" name="svc_oat"> OAT initiation / optimization</label>
+      <label class="checkbox"><input type="checkbox" name="svc_safety"> Medication safety review</label>
+      <label class="checkbox"><input type="checkbox" name="svc_shared"> Shared-care plan</label>
+    </div></fieldset>
+
+    <fieldset><div class="section-title">4. Key Risk Concerns</div><div class="grid-3">
+      <label class="checkbox"><input type="checkbox" name="risk_early"> Early refill requests</label>
+      <label class="checkbox"><input type="checkbox" name="risk_sedation"> Sedation / cognitive impairment</label>
+      <label class="checkbox"><input type="checkbox" name="risk_falls"> Falls / driving concern</label>
+      <label class="checkbox"><input type="checkbox" name="risk_escalation"> Dose escalation</label>
+      <label class="checkbox"><input type="checkbox" name="risk_sud"> Substance use concern</label>
+      <label class="checkbox"><input type="checkbox" name="risk_overdose"> Overdose risk</label>
+      <label class="checkbox"><input type="checkbox" name="risk_lost"> Lost / stolen medications</label>
+      <label class="checkbox"><input type="checkbox" name="risk_multi"> Multiple prescribers/pharmacies</label>
+      <label class="checkbox"><input type="checkbox" name="risk_none"> None known</label>
+    </div><label>Brief clinical summary and risk context</label><textarea name="clinical_summary"></textarea></fieldset>
+
+    <fieldset class="page-break"><div class="section-title">5. Current Medication Information</div>
+      <label>Current medications relevant to referral (or attach medication list)</label><textarea name="current_meds"></textarea>
+      <div class="grid"><div><label>Last opioid/benzo/z-drug prescription date, if relevant</label><input type="text" name="last_rx"></div><div><label>Current dispense pattern, if known</label><input type="text" name="dispense_pattern"></div></div>
+    </fieldset>
+
+    <fieldset><div class="section-title">6. Function-Focused Referral Information</div>
+      <label>What is the patient unable to do now that they want to be able to do?</label><textarea name="function_question"></textarea>
+      <div class="grid-3">
+        <label class="checkbox"><input type="checkbox" name="f_work"> Work/productivity impaired</label>
+        <label class="checkbox"><input type="checkbox" name="f_adl"> ADLs impaired</label>
+        <label class="checkbox"><input type="checkbox" name="f_sleep"> Sleep impaired</label>
+        <label class="checkbox"><input type="checkbox" name="f_physical"> Physical function impaired</label>
+        <label class="checkbox"><input type="checkbox" name="f_social"> Social/relationship function impaired</label>
+        <label class="checkbox"><input type="checkbox" name="f_forms"> Disability forms/support needed</label>
+      </div>
+    </fieldset>
+
+    <fieldset><div class="section-title">7. Relevant History / Investigations</div><label>Pertinent diagnoses, previous treatments, investigations, or barriers to care</label><textarea name="history"></textarea></fieldset>
+
+    <fieldset><div class="section-title">8. Attachments Requested</div><div class="grid-3">
+      <label class="checkbox"><input type="checkbox" name="att_meds"> Medication list</label>
+      <label class="checkbox"><input type="checkbox" name="att_labs"> Recent labs</label>
+      <label class="checkbox"><input type="checkbox" name="att_imaging"> Relevant imaging/reports</label>
+      <label class="checkbox"><input type="checkbox" name="att_pmh"> Problem list / PMH</label>
+      <label class="checkbox"><input type="checkbox" name="att_consults"> Prior consultant notes</label>
+      <label class="checkbox"><input type="checkbox" name="att_uds"> UDS/PMP/TPP info if available</label>
+    </div></fieldset>
+
+    <fieldset><div class="section-title">9. Urgency / Safety</div><div class="grid-3">
+      <label class="checkbox"><input type="checkbox" name="urg_routine"> Routine</label>
+      <label class="checkbox"><input type="checkbox" name="urg_semi"> Semi-urgent</label>
+      <label class="checkbox"><input type="checkbox" name="urg_high"> High safety concern - specify below</label>
+    </div><label>Urgency explanation / immediate safety concerns</label><textarea name="urgency_note"></textarea></fieldset>
+
+    <fieldset><div class="section-title">10. Referral Acknowledgement</div>
+      <p class="note">I understand this is a consultation and time-limited stabilization service. Referral does not imply automatic prescribing takeover, automatic continuation of controlled medications, or replacement of ongoing primary care. Urgent or emergent concerns should be directed to ED/urgent services.</p>
+      <div class="grid"><div><label>Referring clinician signature</label><input type="text" name="signature"></div><div><label>Date</label><input type="date" name="signature_date"></div></div>
+    </fieldset>
+
+    <div class="actions"><button class="button" type="button" onclick="window.print()">Print / Save as PDF</button><button class="button secondary" type="reset">Clear Form</button></div>
+  </form>
+  <footer>This form contains patient health information once completed. Send only through approved clinic channels. This is not an emergency service.</footer>
+</div>
+
+<div style="max-width:980px;margin:24px auto;padding:20px;border:1px solid #ded6ca;border-radius:16px;font-family:Arial,sans-serif;">
+  <h2 style="margin-top:0;">Download referral forms</h2>
+  <p><a href="/assets/forms/referral-form-fillable.pdf">Download fillable PDF</a> | <a href="/assets/forms/referral-form-fax.pdf">Download fax-friendly PDF</a> | <a href="/">Return to homepage</a></p>
+  <p style="font-size:14px;color:#555;">Fax completed referrals to 825-600-5926 or email referral inquiries to referrals@dbfsp.ca. Confirm privacy/security workflow before accepting patient-identifiable information by email.</p>
+</div>
+</body>
+</html>
